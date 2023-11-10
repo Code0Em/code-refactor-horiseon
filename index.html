@@ -1,7 +1,9 @@
+<!--My Edits: 1. Added meaningful title 2. Added missing img alt tags (images convey no meaning, so marked as decorative) 3. Added semantic elements to replace div tags 4. Tidied up indentation-->
+<!--My Edits: 5. Moved comments to top 6. Added semantic element <main> to replace CSS class selector (.content) 7. Deleted unnecessary class selectors (replaced with element selectors in CSS)-->
+
 <!DOCTYPE html>
 <html lang="en-gb">
 
-<!--First Edits: 1. Added meaningful title 2. Added missing img alt tags (images convey no meaning, so marked as decorative) 3. Added semantic elements to replace div tags 4. Tidied up indentation-->
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -9,8 +11,8 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1>Hori<span class="seo">seo</span>n</h1>
+  <header>
+    <h1>Hori<span>seo</span>n</h1>
       <nav>
         <ul>
           <li>
@@ -28,7 +30,7 @@
 
   <section class="hero"></section>
 
-  <section class="content">
+  <main>
     <article class="search-engine-optimization">
       <img src="./assets/images/search-engine-optimization.jpg" alt="" class="float-left" />
       <h2>Search Engine Optimization</h2>
@@ -49,9 +51,9 @@
       <p>Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
       </p>
     </article>
-  </section>
+  </main>
 
-  <aside class="benefits">
+  <aside>
     <article class="benefit-lead">
       <h3>Lead Generation</h3>
       <img src="./assets/images/lead-generation.png" alt=""/>
