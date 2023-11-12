@@ -1,4 +1,4 @@
-# Accessible Webpage for Marketing Agency (Horiseon)
+# Accessible Webpage for Marketing Agency
 
 ## Description
 
@@ -31,3 +31,18 @@ Credit given to edX (2023) for providing starter code. Credit given to WebAIM’
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Acknowledgments
+
+Code refactored by Code0Em ([email](mailto:code.em@outlook.com)/ [GitHub](https://github.com/Code0Em)).
+
+## References
+
+Accessible Web (2023) [*Minimum font size?*](https://accessibleweb.com/question-answer/minimum-font-size/)
+
+edX (2023) [*Build new skills. Advance your career*](https://www.edx.org/).
+
+University of North Carolina at Greensboro (2019) [*Making Design Accessible: Fonts, Color Contrast, and Alt Text*](https://accessibility.uncg.edu/getting-started-with-accessibility/accessible-design/).
+
+W3C (2023) [*Web Content Accessibility Guidelines (WCAG) 2.2.*](https://www.w3.org/TR/WCAG22/).
+
+WebAIM (2023) [*Contrast Checker*](https://webaim.org/resources/contrastchecker/).
+
