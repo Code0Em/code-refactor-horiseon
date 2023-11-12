@@ -1,4 +1,4 @@
-# Accessible Webpage for Marketing Agency (Horseon)
+# Accessible Webpage for Marketing Agency (Horiseon)
 
 ## Description
 
@@ -13,6 +13,18 @@ Other considerations were made, but later deemed not necessary. For example, exi
 N/A
 
 ## Usage
+
+Users navigate to the webpage via the URL ([Home - Horiseon](ADD LINK WHEN DEPLOYED)). When on the webpage, users can navigate to different sections of the page via the hyperlinks in the navigation bar (top right of the page).
+
+The webpage will display as follows:
+
+![Screenshot of Horseon homepage](/assets/images/01-html-css-git-challenge-demo.png)
+
+Note, however, that the layout is designed for desktop viewing. Therefore, users accessing the webpage at a resolution smaller than 768px may notice that some of the elements appear different than in the screenshot above.
+
+## Credits
+
+Credit given to edX (2023) for providing starter code. Credit given to WebAIM’s contrast checker (2023), which was utilised to check existing colour contrast and make updates to meet WCAG at level AA. Other credits have been cited above.
 
 ## License
 
