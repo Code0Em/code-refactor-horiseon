@@ -1,18 +1,23 @@
-/*My Edits: 1. Replaced class selector (content) with element selector (main) 2. Changed other class selectors to element selectors 3. Deleted/condensed CSS rules where possible 4. Added comments to explain CSS rules*/
+/*My Edits: 1. Replaced class selector (content) with element selector (main) 2. Changed other class selectors to element selectors 3. Deleted/condensed CSS rules where possible (to apply DRY) 4. Added comments to explain CSS rules 5. Continued to condense/delete CSS rules and renamed SEO, ORM and SMM class selectors (now replaced with one class selector, named functions) (more meaningful) 6. Checked all colour contrast, and changed background colour (in rule for aside element) to meet WCAG AA 7. Checked font-family choices for accessibility (all sans serif, no changes) 8. Checked font sizes for accessibility (16px is min, no changes) 9. Added more comments to further explain CSS styling*/
 
-/*Styles all of page (where not overridden by class selector)*/
+/*Styles all of page (where not overridden by class selector) (all elements’ padding and border are included in width and height)*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/*Styles body of page (where not overridden by class selector)*/
+/*Styles body of page (where not overridden by class selector; the case for all element selectors below) (sets background colour)*/
 body {
     background-color: #d9dcd6;
 }
 
-/*Styles header*/
+/*Styles paragraphs throughout page (sets font size as 16px)*/
+p {
+    font-size: 16px;
+}
+
+/*Styles header (sets positioning of header, font family options, background colour and font colour)*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,7 +25,7 @@ header {
     color: #ffffff;
 }
 
-/*Styles Horiseon in top left*/
+/*Styles Horiseon in top left (sets positioning and font size, inc different colour for “seo”)*/
 h1 {
     display: inline-block;
     font-size: 48px;
@@ -30,7 +35,7 @@ span {
     color: #d9dcd6;
 }
 
-/*Styles navigation in top right (inc. links)*/
+/*Styles navigation in top right (sets positioning, font family, font size, and font colour of links to bookmarks)*/
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -49,12 +54,7 @@ nav a {
     text-decoration: none;
 }
 
-/*Style paragraphs throughout page (where not overridden by class selector)*/
-p {
-    font-size: 16px;
-}
-
-/*Styles hero*/
+/*Styles hero image (sets size of image and positioning)*/
 .hero {
     height: 800px;
     width: 100%;
@@ -64,6 +64,32 @@ p {
     background-position: center;
 }
 
+/*Styles main content (except sidebar to right) (sets size of this content, positioning, font-family, backgroung colour, font colour; sets font size and positioning of headers; sets size of images)*/
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.functions {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.functions h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.functions img {
+    max-height: 200px;
+}
+
+/*Styles images in main content (sets position of SEO and SMM to left, ORM to right)*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -74,14 +100,7 @@ p {
     margin-left: 25px;
 }
 
-/*Styles main content (except side bar to right)*/
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/*Styles sidebar to right*/
+/*Styles sidebar to right (sets positioning and size of this content, font family and background colour; sets positioning and font colour in LG, BA, CM; and sets positioning of headings and images in these)*/
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -90,112 +109,26 @@ aside {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #227BAA;
 }
 
-.benefit-lead {
+.benefits {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/*Styles footer*/
+/*Styles footer (sets positioning, font family and alignment of text; sets size of font in heading)*/
 footer {
     padding: 30px;
     clear: both;
