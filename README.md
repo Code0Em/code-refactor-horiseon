@@ -14,7 +14,7 @@ N/A
 
 ## Usage
 
-Users navigate to the webpage via the URL ([Home - Horiseon](ADD LINK WHEN DEPLOYED)). When on the webpage, users can navigate to different sections of the page via the hyperlinks in the navigation bar (top right of the page).
+Users navigate to the webpage via the URL ([Home - Horiseon](https://code0em.github.io/refactor-for-accessibility/)). When on the webpage, users can navigate to different sections of the page via the hyperlinks in the navigation bar (top right of the page).
 
 The webpage will display as follows:
 
